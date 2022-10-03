@@ -21,10 +21,10 @@ jobs:
           distribution: 'temurin'
       - name: docker installation
         uses: docker-practice/actions-setup-docker@master
-                - run: |
-                set -x
-                docker version
-                docker run --rm hello-world
+      - run: |
+              set -x
+              docker version
+              docker run --rm hello-world
       - name: Build with Gradle
         run: ./gradlew build
       - name: Start the mongodb docker image
