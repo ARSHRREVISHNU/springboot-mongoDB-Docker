@@ -30,4 +30,4 @@ jobs:
       - name: Start the mongodb docker image
         run: docker compose -f docker-compose.yml up -d
       - name: Start the server
-        run: java -jar build/libs/springboot-mongodb-demo.jar
+        run: java -jar build/libs/spingboot-mongodb-demo.jar
